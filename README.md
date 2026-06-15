@@ -2,7 +2,6 @@
 
 **Author:** AmintheGHOUL  
 **Target Roles:** SOC Analyst · DFIR  
-**Status:** Active — Cloud phase complete, attack simulations in progress
 
 A hands-on cybersecurity home lab built to demonstrate practical enterprise attack detection, SIEM engineering, and cloud security skills. Every component mirrors techniques and tools used in real SOC and DFIR work.
 
