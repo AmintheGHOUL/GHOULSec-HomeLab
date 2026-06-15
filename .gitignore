@@ -1,0 +1,77 @@
+# GHOULSec Home Lab — .gitignore
+
+# ===========================================================
+# SENSITIVE — Never commit these
+# ===========================================================
+
+# Password files
+passwords.txt
+pass*.txt
+*.pass
+creds.txt
+credentials.txt
+
+# AWS credentials
+.aws/
+aws_credentials*
+
+# Azure credentials / tokens
+.roadtools_auth
+*.pfx
+*.p12
+
+# Private keys and certificates
+*.key
+*.pem
+*.cer
+*.crt
+
+# Environment files with secrets
+.env
+*.env
+
+# ===========================================================
+# Build / attack artifacts (run locally, don't commit)
+# ===========================================================
+*.pcap
+*.cap
+*.log
+*.evtx
+*.dmp
+*.dump
+lsass*
+mimikatz_output*
+secretsdump*
+bloodhound*
+*.db
+
+# ===========================================================
+# OS junk
+# ===========================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# ===========================================================
+# Editor files
+# ===========================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===========================================================
+# Archive leftovers (raw zip uploads, staging)
+# ===========================================================
+*.zip
+configueration.zip
+files.zip
+scripts.zip
+
+# ===========================================================
+# Temp / staging
+# ===========================================================
+tmp/
+temp/
+staging/
