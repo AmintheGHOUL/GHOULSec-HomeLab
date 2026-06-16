@@ -576,7 +576,7 @@ sudo systemctl restart wazuh-manager
 
 **Evidence — TheHive Case #143:**
 
-![TheHive Case 143 — LSASS False Positive](assets/screenshots/thehive-fp-lsass-svchost.png)
+![TheHive Case 143 — LSASS False Positive](https://github.com/AmintheGHOUL/GHOULSec-HomeLab/blob/main/assets/screenshots/thehive-fp-lsass-svchost.png?raw=true)
 
 ---
 
@@ -594,7 +594,7 @@ sudo systemctl restart wazuh-manager
 
 **Evidence — TheHive Case #144:**
 
-![TheHive Case 144 — Renamed Binary False Positive](./screenshots/thehive-fp-renamed-binary.png)
+![TheHive Case 144 — Renamed Binary False Positive](https://github.com/AmintheGHOUL/GHOULSec-HomeLab/blob/main/assets/screenshots/thehive-fp-renamed-binary.png?raw=true)
 
 ---
 
