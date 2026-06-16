@@ -69,7 +69,7 @@ Ghoul@2024
 
 The wordlist is deliberately short — password spraying requires staying under lockout thresholds. Entra ID default lockout triggers after 10 failures. Testing one password per account per spray cycle keeps the attack invisible.
 
-![Kali terminal showing users.txt and passwords.txt contents](assets/screenshots/c05-01-wordlists.png)
+![Kali terminal showing users.txt and passwords.txt contents](../../assets/screenshots/c05-01-wordlists.png)
 
 ---
 
@@ -98,7 +98,7 @@ Valid credential found: `jsmith@<your-tenant>.onmicrosoft.com : <SprayPassword!>
 
 The 480-byte response for bjones indicates an authentication failure. The 4425-byte response for jsmith indicates a successful token issuance — the size difference alone leaks which account succeeded before the SUCCESS line appears.
 
-![Kali terminal showing MSOLSpray SUCCESS output](assets/screenshots/c05-02-msolspray-success.png)
+![Kali terminal showing MSOLSpray SUCCESS output](../../assets/screenshots/c05-02-msolspray-success.png)
 
 ---
 
@@ -117,7 +117,7 @@ Tokens were written to .roadtools_auth
 
 The token is stored locally and used for all subsequent API calls. No MFA challenge was triggered — the account had no Conditional Access policy requiring it.
 
-![Kali terminal showing token written to .roadtools_auth](assets/screenshots/c05-03-roadrecon-auth.png)
+![Kali terminal showing token written to .roadtools_auth](../../assets/screenshots/c05-03-roadrecon-auth.png)
 
 ---
 
@@ -139,7 +139,7 @@ ROADrecon gather executed in 4.12 seconds and issued 717 HTTP requests.
 
 **4.12 seconds.** The entire directory of a corporate Entra tenant dumped in under 5 seconds using a single compromised read-only account.
 
-![Kali terminal showing ROADrecon gather output with 717 HTTP requests](assets/screenshots/c05-04-roadrecon-gather.png)
+![Kali terminal showing ROADrecon gather output with 717 HTTP requests](../../assets/screenshots/c05-04-roadrecon-gather.png)
 
 ---
 
@@ -174,7 +174,7 @@ Browser: `http://localhost:5000`
 | allowedToReadOtherUsers | Yes | Any user can enumerate all users |
 | Application consent | User consent allowed | Consent grant attacks possible |
 
-![ROADrecon dashboard showing tenant stats and authorization policy](assets/screenshots/c05-05-roadrecon-dashboard.png)
+![ROADrecon dashboard showing tenant stats and authorization policy](../../assets/screenshots/c05-05-roadrecon-dashboard.png)
 
 ---
 
@@ -196,9 +196,9 @@ Bob Jones profile exposed:
 - Account source: Cloud-only
 - Last password change: 2026-06-14
 
-![ROADrecon Users tab showing all three accounts](assets/screenshots/c05-06-roadrecon-users.png)
+![ROADrecon Users tab showing all three accounts](../../assets/screenshots/c05-06-roadrecon-users.png)
 
-![Bob Jones profile showing ObjectId, department, and account details](assets/screenshots/c05-07-roadrecon-bjones.png)
+![Bob Jones profile showing ObjectId, department, and account details](../../assets/screenshots/c05-07-roadrecon-bjones.png)
 
 ---
 
