@@ -576,7 +576,7 @@ sudo systemctl restart wazuh-manager
 
 **Evidence — TheHive Case #143:**
 
-![TheHive Case 143 — LSASS False Positive](./screenshots/thehive-fp-lsass-svchost.png)
+![TheHive Case 143 — LSASS False Positive](assets/screenshots/thehive-fp-lsass-svchost.png)
 
 ---
 
